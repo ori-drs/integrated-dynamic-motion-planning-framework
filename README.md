@@ -127,7 +127,7 @@ provided in the individual packages:
 | ----------- | ----------- |
 | GPU-Voxels                            | CDDL       |
 | GPU-Voxels (icl_core helper library)  | CDDL        |
-| GPU-Voxels (build system)             | Text        |
+| GPU-Voxels (build system)             | BSD        |
 | GPU-Voxels (PBA kernel code)          | BSD-like license (consult the file LICENSE_PBA.txt)        |
 | GTSAM                                 | Simplified BSD        |
 | GPMP2                                 | BSD        |
