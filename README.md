@@ -16,6 +16,8 @@ Link to: [Preprint](http://arxiv.org/abs/2201.05058)<br>
 Link to: [Video](https://www.youtube.com/watch?v=gdC3mpZNjG4&t=5s)<br>
 Link to: [Dataset](https://ori-drs.github.io/oxford-indoor-human-motion-dataset/)<br>
 
+Note: We are currently in the process of making this work publicly available. Please inform us
+if you have any installation problems. We will very shortly be releasing examples to run as well.
 
 
 <!-- ![alt text](framework.png) -->
@@ -27,20 +29,20 @@ Link to: [Dataset](https://ori-drs.github.io/oxford-indoor-human-motion-dataset/
 We list the packages required to run our framework below.
 
 Libraries to install (consult install instructions within library):
-- GTSAM
-- GPMP2 (our fork)
-- GPU-Voxels (our fork)
+- GTSAM ([our fork](https://github.com/ori-drs/gtsam), develop branch)
+- GPMP2 ([our fork](https://github.com/ori-drs/gpmp2), release_refactoring)
+- GPU-Voxels ([our fork](https://github.com/ori-drs/gpu-voxels), devel branch)
   
 The following packages can be cloned and build within a catkin workspace:
-- gpu_voxels_ros
-- sdf_mp_integration
-- genpy
-- trajectory-prediction-ros
-- robot_self_filter
+- [gpu_voxels_ros](https://github.com/ori-drs/gpu_voxels_ros) (master branch)
+- [sdf_mp_integration](https://github.com/ori-drs/sdf_mp_integration) (master branch)
+- [genpy](https://github.com/ros/genpy) (tested with 0.6.14)
+- [trajectory_prediction_ros](https://github.com/ori-drs/trajectory_prediction_ros) (master branch)
+- [robot_self_filter](https://github.com/ori-drs/robot_self_filter) (ori branch)
 
 Additionally, to perform image segmentation and human position 
-estimate, you will need to run a docker image:
-- centermask2
+estimate, you will need to run a docker image: (to be updated)
+<!-- - centermask2 -->
 
 ## Install Instructions 
 -----
@@ -82,7 +84,7 @@ Installation (C++ libraries only)
 Need to switch to g++ and gcc. Also need to download the latest eigen.
   ```bash
   git clone https://github.com/ori-drs/gpu-voxels.git
-  cd gpu-voxels && mkdir build && cd build
+  cd gpu-voxels && git checkout devel && mkdir build && cd build
   cmake -DCMAKE_PREFIX_PATH=/{path_to_eigen_install_dir} ..
   make check  # optional, run unit tests
   make install
