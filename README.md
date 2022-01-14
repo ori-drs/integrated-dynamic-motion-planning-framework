@@ -4,8 +4,19 @@ Integrated Dynamic Motion Planning Framework
 ## Overview
 -----
 
-This repo provides instructions on how to install our integrated framework
-for predictive whole-body motion planning in dynamic environments.
+This repository provides instructions on how to install our integrated framework
+for predictive whole-body motion planning in dynamic environments, as described
+in the paper:<br>
+"Motion Planning in Dynamic Environments Using 
+Context-Aware Human Trajectory Prediction", <em>Mark Nicholas Finean, Luka Petrović, 
+Wolfgang Merkt, Ivan Marković, and Ioannis Havoutis</em>, submitted to The International Journal
+of Robotics Research. <br>
+
+Link to: [Preprint](http://arxiv.org/abs/2201.05058)<br>
+Link to: [Video](https://www.youtube.com/watch?v=gdC3mpZNjG4&t=5s)<br>
+Link to: [Dataset](https://ori-drs.github.io/oxford-indoor-human-motion-dataset/)<br>
+
+
 
 <!-- ![alt text](framework.png) -->
 <img src="framework.png" width="700">
@@ -107,10 +118,29 @@ If you use this work, please cite following publications:
 
 ## License
 -----
-This repository uses multiple third-party packages which operate under different licenses. 
-Please consider any licensing information provided in the individual packages.
+While this repository is licensed under the BSD-3-Clause license, it uses multiple third-party packages which operate under different licenses. 
+
+We provide a summary indication of the licenses below but please consider any licensing information 
+provided in the individual packages:
+
+| Package                               | License |
+| ----------- | ----------- |
+| GPU-Voxels                            | CDDL       |
+| GPU-Voxels (icl_core helper library)  | CDDL        |
+| GPU-Voxels (build system)             | Text        |
+| GPU-Voxels (PBA kernel code)          | BSD-like license (consult the file LICENSE_PBA.txt)        |
+| GTSAM                                 | Simplified BSD        |
+| GPMP2                                 | BSD        |
+| robot_self_filter                     | BSD        |
+| gpu_voxels_ros                        | BSD-3-Clause        |
+| sdf_mp_integration                    | BSD-3-Clause        |
+| trajectory-prediction-ros             | BSD-3-Clause        |
+| genpy                                 | BSD        |
+| centermask2                           | Attribution-NonCommercial 4.0 International        |
+| centermask2_ros                       | BSD-3-Clause        |
+
 
 ## Questions and Feedback
 -----
-We are always interested to hear how people are using our software so please do get in contact
-if you have questions or comments about this work.
+We are always interested in hearing how people are using our software, 
+so please get in contact if you have questions or comments about this work.
