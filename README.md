@@ -84,7 +84,11 @@ Installation (C++ libraries only)
 Need to switch to g++ and gcc. Also need to download the latest eigen.
   ```bash
   git clone https://github.com/ori-drs/gpu-voxels.git
-  cd gpu-voxels && git checkout devel && mkdir build && cd build
+  cd gpu-voxels && git checkout devel 
+  echo 'export GPU_VOXELS_INSTALL_DIR=$(pwd)' >> ~/.bashrc
+  echo 'export LD_LIBRARY_PATH=$(pwd)/export/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+  echo 'export GPU_VOXELS_MODEL_PATH=$(pwd)/packages/gpu_voxels_models' >> ~/.bashrc
+  mkdir build && cd build
   cmake -DCMAKE_PREFIX_PATH=/{path_to_eigen_install_dir} ..
   make check  # optional, run unit tests
   make install
