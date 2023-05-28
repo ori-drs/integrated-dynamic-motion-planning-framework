@@ -8,10 +8,11 @@ This repository provides instructions on how to install our integrated framework
 for predictive whole-body motion planning in dynamic environments, as described
 in the paper:<br>
 "Motion Planning in Dynamic Environments Using 
-Context-Aware Human Trajectory Prediction", <em>Mark Nicholas Finean, Luka Petrović, 
-Wolfgang Merkt, Ivan Marković, and Ioannis Havoutis</em>, submitted to The International Journal
-of Robotics Research. <br>
+Context-Aware Human Trajectory Prediction", <em>Mark Nicholas Finean*, Luka Petrović*, 
+Wolfgang Merkt, Ivan Marković, and Ioannis Havoutis</em>, published in Robotics and 
+Autonomous Systems (DOI: 10.1016/j.robot.2023.104450). <br>
 
+Link to: [Paper](https://doi.org/10.1016/j.robot.2023.104450)
 Link to: [Preprint](http://arxiv.org/abs/2201.05058)<br>
 Link to: [Video](https://www.youtube.com/watch?v=gdC3mpZNjG4&t=5s)<br>
 Link to: [Dataset](https://ori-drs.github.io/oxford-indoor-human-motion-dataset/)<br>
@@ -115,11 +116,17 @@ Catkin Workspace (C++ only)
 If you use this work, please cite following publications:
 
 ```
-@INPROCEEDINGS{Finean2022,
-  author={Finean, Mark Nicholas and Petrović, Luka and Merkt, Wolfgang and Marković, Ivan and Havoutis, Ioannis},
-  title={Motion Planning in Dynamic Environments Using Human Trajectory Prediction}, 
-  year={2022},
-  }
+@article{FINEAN2023104450,
+title = {Motion planning in dynamic environments using context-aware human trajectory prediction},
+journal = {Robotics and Autonomous Systems},
+volume = {166},
+pages = {104450},
+year = {2023},
+issn = {0921-8890},
+doi = {https://doi.org/10.1016/j.robot.2023.104450},
+url = {https://www.sciencedirect.com/science/article/pii/S0921889023000891},
+author = {Mark Nicholas Finean and Luka Petrović and Wolfgang Merkt and Ivan Marković and Ioannis Havoutis},
+}
 ```
 
 ## License
