@@ -43,7 +43,7 @@ The following packages can be cloned and build within a catkin workspace:
 
 Additionally, to perform image segmentation and human position 
 estimate, you will need to run a docker image: (to be updated)
-- [centermask_ros]([https://github.com/ori-drs/robot_self_filter](https://github.com/ori-drs/centermask_ros.git)) (release branch)
+- [centermask_ros](https://github.com/ori-drs/centermask_ros) (release branch)
 
 ## Install Instructions 
 -----
