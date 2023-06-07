@@ -43,7 +43,7 @@ The following packages can be cloned and build within a catkin workspace:
 
 Additionally, to perform image segmentation and human position 
 estimate, you will need to run a docker image: (to be updated)
-<!-- - centermask2 -->
+- [centermask_ros]([https://github.com/ori-drs/robot_self_filter](https://github.com/ori-drs/centermask_ros.git)) (release branch)
 
 ## Install Instructions 
 -----
@@ -150,7 +150,7 @@ provided in the individual packages:
 | trajectory-prediction-ros             | BSD-3-Clause        |
 | genpy                                 | BSD        |
 | centermask2                           | Attribution-NonCommercial 4.0 International        |
-| centermask2_ros                       | BSD-3-Clause        |
+| centermask_ros                       | MIT        |
 
 
 ## Questions and Feedback
